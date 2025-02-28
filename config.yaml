@@ -1,0 +1,15 @@
+# 线程模型，目前使用 sync.RWMutex
+thread_model: "sync_rwmutex"
+# 数据一致性算法，可选择 gossip
+consistency_algorithm: "gossip"
+# 节点信息
+node:
+  id: "node1"
+  address: "http://localhost:8080"
+  peers:
+    - "http://localhost:8081"
+# Redis 配置
+redis:
+  address: "localhost:6379"
+  password: ""
+  db:
